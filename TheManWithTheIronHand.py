@@ -14,6 +14,7 @@ blob = TextBlob(text)
 
 nouns = []
 adjectives = []
+verbs = []
 
 for word,pos in blob.tags:
     # print(word,pos)
