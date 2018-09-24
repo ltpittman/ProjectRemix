@@ -21,11 +21,13 @@ for word,pos in blob.tags:
         adjectives.append(word)
     if (pos == 'NN'):
         nouns.append(word)
-        
+    if (pos == 'BV'):
+        verbs.append(word)
 
 for i in range(18):
     a = random.choice(adjectives)
     n = random.choice(nouns)
+    vb = random.choice(verbs)
     print(a,n)
 
 
