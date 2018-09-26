@@ -10,6 +10,7 @@ blob = TextBlob(text)
 #now create two emtpy lists for nouns and adjectives
 nouns = []
 adjectives = []
+verbs = []
 
 for word,pos in blob.tags:
     # print(word,pos)
@@ -17,9 +18,14 @@ for word,pos in blob.tags:
         adjectives.append(word)
     if (pos == 'NN'):
         nouns.append(word)
+    if (pos == 'VB'):
+        verbs.append(word)
         
 # This generates an eighteen-line poem by pairing a random adjective 
-for i in range(18):
+for i in range(8):
     a = random.choice(adjectives)
     n = random.choice(nouns)
-    print(a,n)
+    vb = random.choice(verbs)
+    
+    print(vb,a)
+    print(n)
