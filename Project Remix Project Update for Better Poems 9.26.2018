@@ -20,12 +20,30 @@ for word,pos in blob.tags:
         nouns.append(word)
     if (pos == 'VB'):
         verbs.append(word)
-        
-# This generates an eighteen-line poem by pairing a random adjective 
-for i in range(8):
-    a = random.choice(adjectives)
-    n = random.choice(nouns)
-    vb = random.choice(verbs)
+       
+print("The Man with the Iron Hand...\n")
+
+for i in range(4):
+    #adjectives
+    a1 = random.choice(adjectives)
+    a2 = random.choice(adjectives)
+    a3 = random.choice(adjectives)
+    #nounds
+    n1 = random.choice(nouns)
+    n2 = random.choice(nouns)
+    n3 = random.choice(nouns)
+    n4 = random.choice(nouns)
+    n5 = random.choice(nouns)    
+    n6 = random.choice(nouns)
+    #verbs
+    vb1 = random.choice(verbs)
+    vb2 = random.choice(verbs)
+    #print statements
     
-    print(vb,a)
-    print(n)
+    #Poem set-up
+    print(n1.title() + a1 + " " +  vb1  + " " + a2  + " " + n3 + ",")
+    print (n4.title() + ".")
+    print(vb2.title() + " to the " + a3 + ",")
+    print(n5.title() + " and " + n6 + ".")
+    print("\n")
+    
